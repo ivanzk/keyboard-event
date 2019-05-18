@@ -1,0 +1,43 @@
+@import './default.scss';
+
+.root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+table {
+  margin: auto;
+
+  &:nth-child(2) {
+    margin-bottom: calc(var(--space-unit, 1em) * 1);
+  }
+
+  th,
+  td {
+    min-width: 120px;
+    padding-bottom: calc(var(--space-unit, 1em) * 0.5);
+  }
+  tr:last-child {
+    td {
+      padding-bottom: 0;
+    }
+  }
+}
+
+.event-content {
+  margin: var(--space-unit, 1rem);
+}
+
+.immensity-output {
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  display: inline-block;
+  padding: 0.5em 1em;
+  margin-bottom: 0.5em;
+}
+
+.hidden {
+  display: none;
+}

@@ -1,0 +1,12 @@
+{
+  "keys": [
+    "ctrlKey",
+    "shiftKey",
+    "altKey",
+    "metaKey",
+    "key",
+    "code",
+    "keyCode",
+    "which"
+  ]
+}

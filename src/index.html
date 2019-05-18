@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="Description"
+      content="Test the keyboard event - keydown. Test which key or key combination was pressed."
+    />
+    <title>Keyboard Event</title>
+  </head>
+  <body>
+    <div class="root">
+      <div>
+        <h1>Keyboard Event - keydown</h1>
+        <p>Press any key...</p>
+      </div>
+      <div class="event-content hidden" data-js="event-content">
+        <table>
+          <thead>
+            <tr>
+              <th>Property</th>
+              <th>Value</th>
+            </tr>
+          </thead>
+          <tbody data-js="event-props"></tbody>
+        </table>
+        <hr />
+        <div>
+          <h2>immensity.js - handleKeyboardEvent</h2>
+          <p><code>options.eventPropertyToGetKeyValue = 'key'</code></p>
+          <div
+            data-js="immensity-keyboard-event-key"
+            class="immensity-output"
+          ></div>
+          <p><code>options.eventPropertyToGetKeyValue = 'code'</code></p>
+          <div
+            data-js="immensity-keyboard-event-code"
+            class="immensity-output"
+          ></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
